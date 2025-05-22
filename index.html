@@ -244,7 +244,8 @@
     <script>
         class VoiceChat {
             constructor() {
-                this.apiUrl = 'http://173.249.8.251:5000';
+                // Usar la URL actual del sitio para el proxy
+                this.apiUrl = window.location.origin + '/api';
                 this.recognition = null;
                 this.isListening = false;
                 this.initElements();
